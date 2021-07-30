@@ -1,0 +1,24 @@
+.customInput{
+  margin: 30px 20px;
+}
+
+.customInput__input-inputElem:focus{
+  background-color: #dcdcdc;
+}
+
+.input-error input{
+  border: red 1px solid;
+}
+
+.input-complete input{
+  border: green 1px solid;
+}
+
+.customInput__errors{
+  position: absolute;
+}
+
+.customInput__input-inputElem{
+  margin-top: 10px;
+}
+
