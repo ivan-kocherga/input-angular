@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomInputComponent } from './custom-input/custom-input.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorInputComponent } from './error-input/error-input.component';
 
 @NgModule({
@@ -12,15 +12,10 @@ import { ErrorInputComponent } from './error-input/error-input.component';
     AppComponent,
     CustomInputComponent,
     ErrorInputComponent,
-    CustomInputComponent
+    CustomInputComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

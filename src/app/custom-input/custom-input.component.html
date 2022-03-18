@@ -1,16 +1,31 @@
-<div class="customInput" [ngClass]="{'input-error': controller.invalid && isTouchedControl, 'input-complete': controller.valid}">
-
+<div
+  class="customInput"
+  [ngClass]="{
+    'input-error': controller.invalid && isTouchedControl,
+    'input-complete': controller.valid
+  }"
+>
   <div class="customInput__input">
     <div *ngIf="label">
-      <p>{{label}}</p>
+      <p>{{ label }}</p>
     </div>
-    <input class="customInput__input-inputElem" [type]="typeInputGet" [placeholder]="getPlaceholder()" [formControl]="controller"/>
+    <input
+      class="customInput__input-inputElem"
+      [type]="typeInputGet"
+      [placeholder]="getPlaceholder()"
+      [formControl]="controller"
+    />
   </div>
 
-  <div *ngIf="error && isInvalidControl && isTouchedControl" class="customInput__errors">
-    <div *ngFor="let error of controllerKeys" class="customInput__errors-errorsElem">
+  <div
+    *ngIf="error && isInvalidControl && isTouchedControl"
+    class="customInput__errors"
+  >
+    <div
+      *ngFor="let error of controllerKeys"
+      class="customInput__errors-errorsElem"
+    >
       <app-error-input [typeError]="error"></app-error-input>
     </div>
   </div>
-
 </div>
